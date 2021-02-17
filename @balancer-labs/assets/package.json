@@ -1,0 +1,19 @@
+{
+    "name": "assets",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "generate": "npm run generate:registry && npm run generate:tokenlist",
+        "generate:registry": "node scripts/generate-registry.js",
+        "generate:tokenlist": "node scripts/generate-tokenlist.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@fleekhq/fleek-storage-js": "^1.0.9",
+        "axios": "^0.20.0",
+        "ethers": "^5.0.9"
+    }
+}

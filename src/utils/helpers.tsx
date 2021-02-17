@@ -122,6 +122,7 @@ const ETHERSCAN_PREFIXES = {
     4: 'rinkeby.',
     5: 'goerli.',
     42: 'kovan.',
+    1287: 'moonbase.',
 };
 
 export function getEtherscanLink(networkId, data, type) {

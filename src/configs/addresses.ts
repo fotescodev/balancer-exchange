@@ -1,6 +1,9 @@
 import registry from '@balancer-labs/assets/generated/dex/registry.homestead.json';
 import registryKovan from '@balancer-labs/assets/generated/dex/registry.kovan.json';
+import registryMoonbase from '@balancer-labs/assets/generated/dex/registry.moonbase.json';
 import { getSupportedChainName } from '../provider/connectors';
+
+require('dotenv').config();
 
 function getContracts(chainName: string) {
     if (chainName === 'mainnet') {
@@ -21,6 +24,17 @@ function getContracts(chainName: string) {
             sorMulticall: '0x71c7f1086aFca7Aa1B0D4d73cfa77979d10D3210',
         };
     }
+
+    if (chainName === 'moonbase') {
+        return {
+            bFactory: '0x5FbDB2315678afecb367f032d93F642f64180aa3', //process.env.CONTRACT_BFACTORY,
+            proxy: '0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9', //process.env.CONTRACT_EXCHANGE_PROXY,
+            weth: '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0', //process.env.CONTRACT_ERC20_WETH,
+            multicall: '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512', //process.env.CONTRACT_MULTICALL,
+            sorMulticall: '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512', //process.env.CONTRACT_MULTICALL, // sorMulticall has not been deployed yet..
+        };
+    }
+
     return {};
 }
 
@@ -30,6 +44,9 @@ function getAssets(chainName: string) {
     }
     if (chainName === 'kovan') {
         return registryKovan;
+    }
+    if (chainName === 'moonbase') {
+        return registryMoonbase;
     }
     return {
         tokens: {},

@@ -1,0 +1,59 @@
+{
+    "tokens": {
+        "ether": {
+            "address": "ether",
+            "name": "Ether",
+            "symbol": "ETH",
+            "decimals": 18,
+            "precision": 4,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png"
+        },
+        "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0": {
+            "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+            "name": "Wrapped Ether",
+            "symbol": "WETH",
+            "decimals": 18,
+            "precision": 5,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+        },
+        "0xba100000625a3754423978a60c9317c58a424e3D": {
+            "address": "0xba100000625a3754423978a60c9317c58a424e3D",
+            "name": "Balancer",
+            "symbol": "BAL",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png"
+        },
+
+        "0xAf880427F2b32B85fb0BAbE7a55FdB1CdD635d24": {
+            "address": "0xAf880427F2b32B85fb0BAbE7a55FdB1CdD635d24",
+            "name": "Dai Stablecoin",
+            "symbol": "DAI",
+            "decimals": 18,
+            "precision": 2,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+        },
+        "0x74288baCD71f1CBDe7c6941bDB6878462De08f1F": {
+            "address": "0x74288baCD71f1CBDe7c6941bDB6878462De08f1F",
+            "name": "Avocado Unstablecoin",
+            "symbol": "AVO",
+            "decimals": 18,
+            "precision": 2,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+        },
+        "0x71D0441D210E7462f91206D301DF603Ba7EA3514": {
+            "address": "0x71D0441D210E7462f91206D301DF603Ba7EA3514",
+            "name": "Toast Needs Avocado",
+            "symbol": "TST",
+            "decimals": 18,
+            "precision": 2,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+        }
+    }
+}

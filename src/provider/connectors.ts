@@ -44,6 +44,7 @@ export const chainNameById = {
     '1': 'mainnet',
     '3': 'ropsten',
     '42': 'kovan',
+    '1287': 'moonbase',
 };
 
 export const isChainIdSupported = (chainId: number): boolean => {
@@ -54,12 +55,14 @@ const RPC_URLS: { [chainId: number]: string } = {
     1: process.env.REACT_APP_RPC_URL_1 as string,
     3: process.env.REACT_APP_RPC_URL_3 as string,
     42: process.env.REACT_APP_RPC_URL_42 as string,
+    1287: process.env.REACT_APP_RPC_URL_1287 as string,
 };
 
 export const SUBGRAPH_URLS: { [chainId: number]: string } = {
     1: process.env.REACT_APP_SUBGRAPH_URL_1 as string,
     3: process.env.REACT_APP_SUBGRAPH_URL_3 as string,
     42: process.env.REACT_APP_SUBGRAPH_URL_42 as string,
+    1287: process.env.REACT_APP_SUBGRAPH_URL_1287 as string,
 };
 
 export const SUBGRAPH_URL =
