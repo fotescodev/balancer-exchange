@@ -27,11 +27,11 @@ function getContracts(chainName: string) {
 
     if (chainName === 'moonbase') {
         return {
-            bFactory: '0x5FbDB2315678afecb367f032d93F642f64180aa3', //process.env.CONTRACT_BFACTORY,
-            proxy: '0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9', //process.env.CONTRACT_EXCHANGE_PROXY,
-            weth: '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0', //process.env.CONTRACT_ERC20_WETH,
-            multicall: '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512', //process.env.CONTRACT_MULTICALL,
-            sorMulticall: '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512', //process.env.CONTRACT_MULTICALL, // sorMulticall has not been deployed yet..
+            bFactory: '0x794b081a84d6D3C046061523016B3a817b6d00E5', //process.env.CONTRACT_BFACTORY,
+            proxy: '0xE6386206a76F0480344f8C1663B23011ff9b2CB4', //process.env.CONTRACT_EXCHANGE_PROXY,
+            weth: '0xd5d5DB0389D04e6F5fdEA430F314d699FC449fD4', //process.env.CONTRACT_ERC20_WETH,
+            multicall: '0x3B55Fde7dE792df861dF5041Da4a86e7Bd6c30D6', //process.env.CONTRACT_MULTICALL,
+            sorMulticall: '', //process.env.CONTRACT_MULTICALL, // sorMulticall has not been deployed yet..
         };
     }
 
